@@ -10,16 +10,18 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Spacer(),
-        ElevatedButton(
-            onPressed: () {
-              controller.signOut();
-            },
-            child: Text('Çıkış yap butonu')),
-        Center(child: Text('HomePage')),
-      ],
+    return Scaffold(
+      body: Column(
+        children: [
+          Spacer(),
+          ElevatedButton(
+              onPressed: () {
+                controller.signOut();
+              },
+              child: Text('Çıkış yap butonu')),
+          Center(child: Text('HomePage')),
+        ],
+      ),
     );
   }
 }
